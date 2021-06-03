@@ -7,6 +7,9 @@ My cool TypeScript app
 Get started developing...
 
 ```shell
+# run docker
+sudo docker-compose up -d
+
 # install deps
 npm install
 
