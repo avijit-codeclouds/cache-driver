@@ -35,12 +35,12 @@ export class redisController {
     });
   }
 
-  cacheData = async (_: Request, res: any): Promise<any> => {
+  cacheData = async (_: Request, res: Response): Promise<any> => {
     // res.send({ result: 'HW..' });
     res.status(404).send('Sorry, cant find that');
   };
 
-  cacheMethod = async (_: Request, res: any): Promise<any> => {
+  cacheMethod = async (_: Request, res: Response): Promise<any> => {
     // If cache has key, retrieve value
     // from cache itself
     if (myCache.has('uniqueKey')) {
